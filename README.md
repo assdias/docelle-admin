@@ -1,3 +1,9 @@
+<p>
+Chaves de API Secretas: sk_8ae26c10aca7d6da2ca751b47344a20cbfda292dcd7b3944ed78a8ad75b89a5e
+
+Chaves de API Publicáveis: pk_b46f4e04c7af9da6c91ad5bde46631b5a7e9f94e89badb8775072713079233ef
+</p>
+<br>
 <p align="center">
   <a href="https://www.medusajs.com">
   <picture>
