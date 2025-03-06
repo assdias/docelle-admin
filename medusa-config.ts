@@ -16,5 +16,11 @@ module.exports = defineConfig({
       jwtSecret: process.env.JWT_SECRET || "supersecret",
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",      
     },
-  }
+  },
+  admin: {
+    vite: config => {
+      config.server.allowedHosts = ['*']
+      return config
+    }
+  }  
 })
