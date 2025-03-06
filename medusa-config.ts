@@ -18,9 +18,11 @@ module.exports = defineConfig({
     },
   },
   admin: {
-    vite: config => {
-      config.server.allowedHosts = ['*']
-      return config
+    vite(config) {
+      config.server.allowedHosts = [
+        ...(config.server.allowedHosts || []),
+        process.env.MEDUSA_BACKEND_URL,
+      ];
     }
   }  
 })
