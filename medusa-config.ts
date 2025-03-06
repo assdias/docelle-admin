@@ -22,7 +22,11 @@ module.exports = defineConfig({
       config.server.allowedHosts = [
         ...(config.server.allowedHosts || []),
         process.env.MEDUSA_BACKEND_URL,
-      ];
-    }
-  }  
+
+        config.server.host = '0.0.0.0', // Permite conexões externas
+        config.server.strictPort = true, // Mantém a porta fixa
+        config.server.cors = true, // Habilita CORS        
+      ];  
+    }   
+  }
 })
